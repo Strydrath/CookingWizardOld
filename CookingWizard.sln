@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingWizardDataManager", "CookingWizardDataManager\CookingWizardDataManager.csproj", "{90475D7D-DDB5-4049-A468-DFC9F6635FDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingWizardUI", "CookingWizardUI\CookingWizardUI.csproj", "{14F1595A-2E81-4A57-9B35-3FA5FEBE24E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{90475D7D-DDB5-4049-A468-DFC9F6635FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90475D7D-DDB5-4049-A468-DFC9F6635FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90475D7D-DDB5-4049-A468-DFC9F6635FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F1595A-2E81-4A57-9B35-3FA5FEBE24E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F1595A-2E81-4A57-9B35-3FA5FEBE24E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F1595A-2E81-4A57-9B35-3FA5FEBE24E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F1595A-2E81-4A57-9B35-3FA5FEBE24E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
