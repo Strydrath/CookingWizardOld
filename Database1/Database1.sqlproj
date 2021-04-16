@@ -4,20 +4,20 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>CookingWizardData</Name>
+    <Name>Database1</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{ed7bd1da-a002-4084-8cce-2c089297d365}</ProjectGuid>
+    <ProjectGuid>{8f007068-0713-474f-9845-b9549afae0ba}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>CookingWizardData</RootNamespace>
-    <AssemblyName>CookingWizardData</AssemblyName>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
@@ -57,16 +57,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo" />
-    <Folder Include="dbo\Tables" />
-    <Folder Include="dbo\Views" />
-    <Folder Include="dbo\Stored Procedures" />
-    <Folder Include="PublishLocations" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CookingWizardData.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Tables\User_1.sql" />
   </ItemGroup>
 </Project>

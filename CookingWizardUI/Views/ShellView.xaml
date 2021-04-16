@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:CookingWizardUI.Views"
         mc:Ignorable="d"
         Title="ShellView" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <TabControl DockPanel.Dock="Top" Height="80px" VerticalAlignment="Top" Width="{Binding ActualWidth, ElementName=Main}">
+            <TabItem Header="_Losuj">
+                
+            </TabItem>
+            <TabItem Header="_Przepisy">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="_Ustawienia">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Grid>
+            <ContentControl x:Name="ActiveItem" Margin="5"/>
+        </Grid>
+    </DockPanel>
 </Window>
