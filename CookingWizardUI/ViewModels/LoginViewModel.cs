@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using CookingWizardUI.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,12 @@ namespace CookingWizardUI.ViewModels
     {
         private string _userName;
         private string _password;
+        private IAPIHelper _apiHelper;
+        public LoginViewModel(IAPIHelper apiHelper)
+        {
+            _apiHelper = apiHelper;
+        }
+
         public string UserName
         {
             get { return _userName; }
@@ -45,9 +52,9 @@ namespace CookingWizardUI.ViewModels
                 return output;
             }
         }
-        public void LogIn(string userName, string password)
+        public async Task LogIn()
         {
-            Console.WriteLine(); 
+            var result = await _apiHelper.Authenticate(UserName, Password);
         }
     }
 }

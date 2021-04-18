@@ -29,6 +29,7 @@ namespace CookingWizardUI
             _container.Instance(_container);
             _container
                 .Singleton<IWindowManager, WindowManager>()
+                .Singleton<IAPIHelper, APIHelper>()
                 .Singleton<IEventAggregator, EventAggregator>();
 
             GetType().Assembly.GetTypes()
