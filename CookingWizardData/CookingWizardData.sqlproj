@@ -10,8 +10,7 @@
     <ProjectGuid>{ed7bd1da-a002-4084-8cce-2c089297d365}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>CookingWizardData</RootNamespace>
     <AssemblyName>CookingWizardData</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -49,7 +48,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -60,13 +58,26 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Views" />
-    <Folder Include="dbo\Stored Procedures" />
-    <Folder Include="PublishLocations" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CookingWizardData.publish.xml" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="PublishLocations\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User_1.sql" />
+    <Build Include="dbo\Tables\Recipe.sql" />
+    <Build Include="dbo\Tables\Tag.sql" />
+    <Build Include="dbo\Tables\Category.sql" />
+    <Build Include="dbo\Tables\TagLink.sql" />
+    <Build Include="dbo\Tables\Comment.sql" />
+    <Build Include="dbo\Tables\Ingredient.sql" />
+    <Build Include="dbo\Tables\IngredientLink.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbo\Stored Procedures\spUserLookUp.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishLocations\CookingWizardData.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="CookingWizardData.refactorlog" />
   </ItemGroup>
 </Project>

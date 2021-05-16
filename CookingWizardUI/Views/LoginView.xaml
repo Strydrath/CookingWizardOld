@@ -20,24 +20,31 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Margin="20 20 20 20 " Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="44" FontFamily="Bodoni MT Black">
             Login form
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left"  Grid.Row="1" Grid.Column="1" Margin="0 0 0 10" >
+
+        <TextBlock x:Name="ErrorMessage"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                   Margin="0 0 0 20" Foreground="Red" MaxWidth="300"
+                   TextWrapping="Wrap" Visibility="{Binding IsErrorVisible, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}"/>
+
+
+        <TextBlock HorizontalAlignment="Left"  Grid.Row="2" Grid.Column="1" Margin="0 0 5 10" >
             Username: 
         </TextBlock>
-        <TextBox x:Name ="UserName" Grid.Row="1" Grid.Column="2" MinWidth="150" HorizontalAlignment="Center" Margin="0 0 0 20">
+        <TextBox x:Name ="UserName" Grid.Row="2" Grid.Column="2" MinWidth="250" HorizontalAlignment="Center" Margin="0 0 5 20">
         </TextBox>
 
-        <TextBlock HorizontalAlignment="Left"  Grid.Row="2" Grid.Column="1" Margin="0 0 0 20" >
+        <TextBlock HorizontalAlignment="Left"  Grid.Row="3" Grid.Column="1" Margin="0 0 5 20" >
             Password:
         </TextBlock>
-        <PasswordBox x:Name ="Password" Grid.Row="2" Grid.Column="2" MinWidth="150" HorizontalAlignment="Center" Margin="0 0 0 30">
+        <PasswordBox x:Name ="Password" Grid.Row="3" Grid.Column="2" MinWidth="250" HorizontalAlignment="Center" Margin="0 0 5 30">
         </PasswordBox>
 
-        <Button x:Name="LogIn" Padding="20 5"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+        <Button x:Name="LogIn" Padding="20 5"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
             Log in
         </Button>
     </Grid>

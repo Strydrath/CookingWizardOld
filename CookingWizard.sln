@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingWizardUI", "CookingW
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CookingWizardData", "CookingWizardData\CookingWizardData.sqlproj", "{ED7BD1DA-A002-4084-8CCE-2C089297D365}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingWizardDataManager.Library", "CookingWizardDataManager.Library\CookingWizardDataManager.Library.csproj", "{29122330-8643-4E65-AD41-A40C96D3BFB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{ED7BD1DA-A002-4084-8CCE-2C089297D365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED7BD1DA-A002-4084-8CCE-2C089297D365}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED7BD1DA-A002-4084-8CCE-2C089297D365}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{29122330-8643-4E65-AD41-A40C96D3BFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29122330-8643-4E65-AD41-A40C96D3BFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29122330-8643-4E65-AD41-A40C96D3BFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29122330-8643-4E65-AD41-A40C96D3BFB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
